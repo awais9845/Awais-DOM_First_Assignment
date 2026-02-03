@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="script.js" async></script>
+    <style>
+        body {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f2f2f2;
+    font-family: Arial;
+    /* width: fit-content; */
+}
+
+.card {
+    background: white;
+    padding: 25px;
+    width: 250px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    text-align: center;
+}
+
+input {
+    width: 90%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #45a049;
+}
+
+.bottom-text {
+    margin-top: 15px;
+    font-size: 14px;
+    color: gray;
+}
+.btn{
+    width: 150px;
+}
+    </style>
+</head>
+<body>
+    <h1 id="heading">Hello World</h1>
+    <p id="para1">This is a paragraph.</p>
+    <button class="btn" onclick="changeText()">Change Text</button>
+    <button class="btn" onclick="changeBackground()">Change Background</button>
+    <button class="btn" onclick="showAlert()">Alert</button>
+    <!-- card section  -->
+    <div class="card">
+    <!-- <h2>Login</h2> -->
+
+    <input type="text" id="yourName" placeholder="Enter your name">
+
+    <button onclick="submitbtn()">Submit</button>
+
+    <p class="bottom-text" id="showName">show Your name here</p>
+</div>
+</body>
+</html>
