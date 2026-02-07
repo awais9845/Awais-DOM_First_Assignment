@@ -1,0 +1,100 @@
+/* Reset */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: "Segoe UI", Arial, sans-serif;
+}
+
+/* Page layout */
+body{
+    background:#f3f6f8;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    gap:14px;
+    padding:40px 20px;
+}
+
+/* Order control (layout flow) */
+img{ order:1; }
+button:nth-of-type(1){ order:2; }   /* Change Image */
+input:first-of-type{ order:3; }     /* Placeholder input */
+input:disabled{ order:4; }          /* Disabled input */
+button:nth-of-type(2){ order:5; }   /* Enable button */
+.para{ order:6; }
+a{ order:7; }
+button:nth-of-type(3){ order:8; }   /* Change link */
+
+/* Image */
+img{
+    object-fit:cover;
+    border-radius:10px;
+    box-shadow:0 4px 12px rgba(0,0,0,0.12);
+}
+
+/* Buttons */
+button{
+    background:#0a66c2;
+    color:white;
+    border:none;
+    padding:10px 18px;
+    border-radius:6px;
+    cursor:pointer;
+    font-size:14px;
+    transition:.25s;
+}
+
+button:hover{
+    background:#004182;
+}
+
+/* Inputs */
+input{
+    width:240px;
+    padding:10px;
+    border-radius:6px;
+    border:1px solid #ccc;
+    outline:none;
+    background:white;
+    transition:.2s;
+}
+
+/* Border appears when user clicks/focuses */
+input:focus{
+    border:2px solid #0a66c2;
+}
+
+/* Disabled input look */
+input:disabled{
+    background:#e9e9e9;
+    cursor:not-allowed;
+}
+
+/* Paragraph card */
+.para{
+    max-width:520px;
+    background:white;
+    padding:16px;
+    border-radius:8px;
+    color:#444;
+    box-shadow:0 2px 8px rgba(0,0,0,0.08);
+    text-align:center;
+}
+
+/* Link */
+a{
+    text-decoration:none;
+    color:#0a66c2;
+    font-weight:600;
+    padding:8px 14px;
+    background:white;
+    border-radius:6px;
+    box-shadow:0 2px 6px rgba(0,0,0,0.1);
+    transition:.2s;
+}
+
+a:hover{
+    background:#0a66c2;
+    color:white;
+}
